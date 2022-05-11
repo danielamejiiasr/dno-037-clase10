@@ -40,23 +40,20 @@
                 <div>DNO037</div>
             </footer>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.0/dist/chart.min.js"></script>
-        <script>
-            var ctx = document.getElementById("grafico").getContext("2d");
-            var myChart = new Chart(ctx, {
-                type: "bar",
-                data: {
-                    labels: ["La primera", "La segunda", "La tercera", "La cuarta", "La quinta", "La sexta", "La séptima", "La octava", "La novena"],
-                    datasets: [
-                        {
-                            label: "# of Votes",
-                            data: [10, 7, 2, 5, 8, 20, 8, 4, 1],
-                            backgroundColor: "rgba(20, 100, 180, 0.5)",
-                            borderWidth: 0,
-                        },
-                    ],
-                },
+<script>
+var ctx = document.getElementById('grafico').getContext('2d');
+var myChart = new Chart(ctx, {
+type: 'bar',
+data: {
+    labels: ['Animal Crossing-Gamecube', 'Animal Crossing:Wild World-DS', 'Animal Crossing:City Folk-Wii', 'Animal Crossing:New Leaf-3DS', 'Animal Crossing:Happy Home Designer-3DS', 'Animal Crossing:Amiibo Festival-Wii U', 'Animal Crossing:New Horizons-Switch'],
+    datasets: [{
+        label: '# de copias vendidas[Millones]',
+        data: [3.15, 11.75, 3.38, 12.55, 2.02, 0.2, 26],
+        backgroundColor: '#017c74',
+        borderWidth: 0
+    }]
+},
                 options: {
                      indexAxis: "y",
                      scales: {
